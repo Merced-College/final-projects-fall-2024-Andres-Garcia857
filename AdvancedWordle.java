@@ -63,7 +63,6 @@ public class AdvancedWordle {
 
             // If user entered /STOP, end the game
             if (input.equals("/STOP")) {
-                System.out.println("Thanks for playing!");
                 break;
             }
             
@@ -137,7 +136,6 @@ public class AdvancedWordle {
 
             // If user entered /STOP in prior inner loop, end the game
             if (input.equals("/STOP")) {
-                System.out.println("Thanks for playing!");
                 break;
             }
 
@@ -162,7 +160,6 @@ public class AdvancedWordle {
                     break;
                 } else if (input.equals("NO")) {
                     // Else if user entered NO, break out of while loop
-                    System.out.println("Thanks for playing!");
                     break ;
                 }
             }
@@ -171,6 +168,8 @@ public class AdvancedWordle {
                 break;
             }
         }
+
+        System.out.println("Thanks for playing!");
 
         scnr.close();
         
