@@ -15,10 +15,12 @@ public class AdvancedWordle {
     public static ArrayList<Word> normalWords = new ArrayList<Word>(); // List of 5-lettered words
     public static ArrayList<Word> hardWords = new ArrayList<Word>(); // List of 6-lettered words
     public static ArrayList<Word> veryHardWords = new ArrayList<Word>(); // List of 7-lettered words
+
     public static Random random = new Random();
+    public static Scanner scnr = new Scanner(System.in);
+    
 
     public static void main(String[] args) {
-        Scanner scnr = new Scanner(System.in);
         
         /**
          * Reads in words of WordList.txt, adding them to appropriate list
