@@ -49,15 +49,17 @@ public class AdvancedWordle {
         int currGuess; // Current guess
         Word word; // Holds word for user to guess
         String input; // Reads in user input
-        System.out.println("\nWelcome to Advanced Wordle! Remember to type /STOP at any point to end the game\nEASY - 4 letters, NORMAL - 5 letters, HARD - 6 letters, or VERY HARD - 7 letters");
+        System.out.println("\nWelcome to Advanced Wordle! Remember to type /STOP at any point to end the game");
 
         // Start of game, ends when user runs out of guesses
         while (true){
             // Begins current guess
             currGuess = 1;
 
+            // User decides difficulty
+            System.out.println("EASY - 4 letters, NORMAL - 5 letters, HARD - 6 letters, or VERY HARD - 7 letters");
             System.out.print("Choose difficulty: ");
-            input = scnr.nextLine().toUpperCase(); // User decides difficulty
+            input = scnr.nextLine().toUpperCase();
 
             // If user entered /STOP, end the game
             if (input.equals("/STOP")) {
