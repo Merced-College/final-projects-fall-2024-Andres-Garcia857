@@ -96,7 +96,7 @@ public class AdvancedWordle {
                 System.out.print("Guess " + currGuess + " of " + totalGuesses + ": ");
                 input = scnr.nextLine().toUpperCase(); // User makes a guess
 
-                // If user enters /STOP, break out of this loop
+                // If user enters /STOP, end the game
                 if (isStop(input)) {
                     break;
                 }
